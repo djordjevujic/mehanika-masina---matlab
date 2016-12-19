@@ -34,3 +34,11 @@ c = [-2*r4at*fi4at *cos(fi4a + pi/2)- r4a*fi4at^2*cos(fi4a + pi)+ r2*fi2t^2*cos(
  fi4att = x(2)
  r4att = x(1)
  
+  %%%%%%%%%%%%%%%%%%%---2. kontura polozaj
+x0 = [0 135*pi/180]; %135, otprilike, izmedju 180 i 90, vidjeno sa working modela
+x = fsolve(@zadatak1polozaj2, x0);
+
+fi5 = x(2)
+r6 = x(1)
+%---ovde se zavrsava polozaj 2-------
+ 
